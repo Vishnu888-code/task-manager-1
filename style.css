@@ -1,0 +1,126 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e3f2fd; /* Light blue background */
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  max-width: 450px;
+  width: 100%;
+  padding: 25px 30px 40px;
+  box-shadow: 0 8px 24px rgba(30,64,131,0.09);
+  border-radius: 14px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  color: #1a237e; /* Dark blue text */
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-img {
+  display: flex;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 13px 18px;
+  font-size: 17px;
+  border: 2px solid #b3c6ff; /* Gentle blue border */
+  border-radius: 25px;
+  transition: border-color 0.3s ease;
+  color: #1a237e; /* Dark blue text */
+}
+
+input[type="text"]:focus {
+  border-color: #1a237e;
+  outline: none;
+  box-shadow: 0 0 7px #b3c6ff96;
+}
+
+button {
+  padding: 13px 17px;
+  background: #1a237e; /* Dark blue */
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3949ab;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background: #bbdefb; /* Softer card blue */
+  margin-bottom: 11px;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(30,64,131,0.10);
+  transition: transform 0.15s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+li.completed span.task-text {
+  text-decoration: line-through;
+  color: #90a4ae; /* Muted blue/gray */
+  font-style: italic;
+}
+
+.task-buttons button {
+  margin-left: 7px;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  box-shadow: 0 2px 6px rgba(30,64,131,0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.task-buttons button.complete-btn {
+  background-color: #00897b;
+}
+
+.task-buttons button.delete-btn {
+  background-color: #c62828;
+}
+
+.task-buttons button.edit-btn {
+  background-color: #ffb300;
+  color: #1a237e; /* Dark blue text */
+}
